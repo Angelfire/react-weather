@@ -40,7 +40,7 @@ class App extends Component {
 
     return (
       <div>
-        <h1>Welcome to React</h1>
+        <h1>Welcome to React-Weather</h1>
         <form onSubmit={this.fetchData}>
           <label>I want to know the weather for
             <input
@@ -51,7 +51,7 @@ class App extends Component {
         </form>
         <p className="temp-wrapper">
           <span className="temp">{ currentTemp }</span>
-          <span>°C</span>
+          <span className="temp-symbol">°C</span>
         </p>
       </div>
     );
