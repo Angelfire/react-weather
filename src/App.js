@@ -42,11 +42,12 @@ class App extends Component {
       <div>
         <h1>Welcome to React</h1>
         <form onSubmit={this.fetchData}>
-          <label>I want to know the weather for</label>
-          <input
-            type="text"
-            placeholder={"City, Country"}
-            ref={(input) => this.inputRef = input} />
+          <label>I want to know the weather for
+            <input
+              type="text"
+              placeholder={"City, Country"}
+              ref={(input) => this.inputRef = input} />
+          </label>
         </form>
         <p className="temp-wrapper">
           <span className="temp">{ currentTemp }</span>
